@@ -3,7 +3,8 @@ import Button from "./button.js";
 import OutputScreen from "./outputScreen.js";
 import CalculatorTitle from "./calculatorTitle.js";
 
-const Calculator = () => {
+class Calculator extends React.Component {
+    render() {
         return (
             <div className="frame">
                 <CalculatorTitle value="Calculator"/>
@@ -41,7 +42,8 @@ const Calculator = () => {
                 </div>
             </div>
         );
+    }
 
-;}
+}
 
 export default Calculator;
